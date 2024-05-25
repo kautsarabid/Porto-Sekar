@@ -52,7 +52,7 @@ export default function App() {
 
 				<section>
 					<h1 className="stroke-text text-transparent text-7xl mb-3">Skill</h1>
-					<p className="text-8xl text-center font-black">Mencintai Ekal</p>
+					<p className="text-5xl text-center font-black">Mencintai Ekal</p>
 				</section>
 
 				<section>

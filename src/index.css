@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	@apply overflow-x-hidden;
+}
 body {
-	@apply font-primary overflow-x-hidden;
+	@apply font-primary;
 }
 
 .stroke-text {
