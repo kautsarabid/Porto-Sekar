@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	@apply font-primary;
+	@apply font-primary overflow-x-hidden;
 }
 
 .stroke-text {
