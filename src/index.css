@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply font-primary;
+}
+
+.stroke-text {
+	-webkit-text-fill-color: none; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #003b33;
+}
