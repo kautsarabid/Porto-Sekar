@@ -11,8 +11,10 @@ export default {
 			fontFamily: {
 				primary: ["Lato", "sans-serif"],
 				display: ["Playfair Display", "serif"],
+				excalibur: ["ExcaliburNouveau", "sans-serif"],
+				evil: ["EvilEmpire", "sans-serif"],
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("tailwind-scrollbar")],
 };

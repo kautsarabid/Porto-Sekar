@@ -1,5 +1,11 @@
 import NavBody from "./components/Navbar/NavBody";
-import Image from "./assets/sekar-porto2.jpg";
+import Image from "./assets/sekar-porto.jpg";
+import Title from "./components/Title";
+import Contact from "./pages/Contact";
+import Skill from "./pages/Skill";
+import Project from "./pages/Project";
+import Certificate from "./pages/Certificate";
+import WorkExperience from "./pages/WorkExperience";
 export default function App() {
 	const names = Array.from({ length: 6 }, (_, index) => index + 1);
 	return (
@@ -12,10 +18,10 @@ export default function App() {
 				<section className="bg-primary h-screen pt-20 ">
 					<div className="flex flex-col justify-center items-center h-full">
 						<div className="text-center mb-2">
-							<h1 className="font-display font-extrabold text-4xl text-secondary">
+							<h1 className="font-excalibur text-3xl text-secondary uppercase tracking-widest title relative">
 								Maghfirah Sekar Hilmawita
 							</h1>
-							<p className="text-tertiary opacity-85 text-lg capitalize">
+							<p className="text-tertiary opacity-85 text-base capitalize">
 								Human Resources, Admin, research and development
 							</p>
 						</div>
@@ -26,22 +32,16 @@ export default function App() {
 				</section>
 
 				<section>
+					<Title names={names} title={"About"} />
+
 					<div className="p-4">
-						<h1 className="stroke-text text-transparent text-7xl mb-3">
-							About
-						</h1>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Recusandae totam alias corrupti sequi, vitae nulla pariatur culpa
-							et eligendi quod dolorem iure, quibusdam commodi atque saepe illum
-							sed mollitia esse?. Lorem ipsum dolor sit amet consectetur
-							adipisicing elit. Recusandae totam alias corrupti sequi, vitae
-							nulla pariatur culpa et eligendi quod dolorem iure, quibusdam
-							commodi atque saepe illum sed mollitia esse?. Lorem ipsum dolor
-							sit amet consectetur adipisicing elit. Recusandae totam alias
-							corrupti sequi, vitae nulla pariatur culpa et eligendi quod
-							dolorem iure, quibusdam commodi atque saepe illum sed mollitia
-							esse?.
+							Bachelor's degree in Biology with communication, administrative
+							and research skills gained through work and organizational
+							experience. Over the course of my career, I have exceeded sales
+							performance goals and successfully built strong client
+							relationships through negotiation, interpersonal and communication
+							skills.
 						</p>
 					</div>
 
@@ -50,26 +50,11 @@ export default function App() {
 					</div>
 				</section>
 
-				<section>
-					<h1 className="stroke-text text-transparent text-7xl mb-3">Skill</h1>
-					<p className="text-5xl text-center font-black">Mencintai Ekal</p>
-				</section>
-
-				<section>
-					<h1 className="stroke-text text-transparent text-7xl mb-3">
-						Project
-					</h1>
-				</section>
-				<section>
-					<h1 className="stroke-text text-transparent text-7xl mb-3">
-						Certificate
-					</h1>
-				</section>
-				<section>
-					<h1 className="stroke-text text-transparent text-7xl mb-3">
-						Contact
-					</h1>
-				</section>
+				<Skill names={names} />
+				<WorkExperience names={names} />
+				<Project names={names} />
+				<Certificate names={names} />
+				<Contact names={names} />
 			</main>
 		</>
 	);
