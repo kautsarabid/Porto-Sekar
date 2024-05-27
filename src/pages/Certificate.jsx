@@ -3,6 +3,7 @@ import Image1 from "../assets/Guest-Lecture.png";
 import Image2 from "../assets/Sertifikat-HMB-1.png";
 import Modal from "../components/Modal";
 import { useState } from "react";
+import Card from "../components/Card";
 
 export default function Certificate({ names }) {
 	const [showModal, setShowModal] = useState(false);
@@ -30,32 +31,22 @@ export default function Certificate({ names }) {
 	];
 	return (
 		<>
-			<section>
-				<Title names={names} title={"Certificate"} />
+			<section id="certificate">
+				<Title names={names} title={"Certificate"} classCSS={"stroke-text"} />
 
-				<div className="grid grid-cols-1 gap-2 p-4">
+				<Card.Container>
 					{items.map((item, index) => (
-						<div
-							className="flex flex-col items-start justify-center border h-[280px] w-full rounded-md cursor-pointer"
-							key={index}
+						<Card
+							items={items}
 							onClick={() => handleItemClick(item)}
+							key={index}
 						>
-							<div
-								className="w-full h-full bg-cover"
-								style={{
-									backgroundImage: `url(${item.image})`,
-									backgroundSize: "",
-									backgroundPosition: "top",
-								}}
-							></div>
+							<Card.Image src={item.image} alt={item.title} />
 
-							<div className="p-2">
-								<h2 className="font-bold capitalize">{item.title}</h2>
-								<p>{item.desc}</p>
-							</div>
-						</div>
+							<Card.Body title={item.title} desc={item.desc} />
+						</Card>
 					))}
-				</div>
+				</Card.Container>
 			</section>
 
 			{selectedItem && (

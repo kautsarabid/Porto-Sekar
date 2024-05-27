@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "ExcaliburNouveau";
-	src: url("../../public/font/ExcaliburNouveau.ttf") format("truetype");
+	src: url("font/ExcaliburNouveau.ttf") format("truetype");
 }
 @font-face {
 	font-family: "EvilEmpire";
-	src: url("../../public/font/EvilEmpire.otf");
+	src: url("font/EvilEmpire.otf");
 }

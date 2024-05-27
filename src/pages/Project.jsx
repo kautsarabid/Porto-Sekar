@@ -5,6 +5,7 @@ import Kkp from "../assets/kkp.jpg";
 
 import { useState } from "react";
 import Modal from "../components/Modal";
+import Card from "../components/Card";
 
 export default function Project({ names }) {
 	const [showModal, setShowModal] = useState(false);
@@ -41,39 +42,22 @@ export default function Project({ names }) {
 	];
 	return (
 		<>
-			<section>
-				<Title names={names} title={"Project"} />
+			<section className="bg-primary" id="project">
+				<Title names={names} title={"Project"} classCSS={"stroke-text-odd"} />
 
-				<div className="grid grid-cols-2 gap-2 p-4">
+				<Card.Container>
 					{items.map((item, index) => (
-						<div
-							className="flex flex-col items-start  border h-full w-full rounded-md overflow-hidden cursor-pointer"
-							key={index}
+						<Card
+							items={items}
 							onClick={() => handleItemClick(item)}
+							key={index}
 						>
-							<div className="w-full overflow-hidden border h-[150px]">
-								<img
-									src={item.image}
-									alt={`foto ${item.title}`}
-									className="object-cover object-top w-full h-full "
-								/>
-							</div>
-							{/* <div
-								className="w-full h-full bg-top"
-								style={{
-									backgroundImage: `url(${item.image})`,
-									backgroundSize: "cover",
-									backgroundPosition: "center",
-								}}
-							></div> */}
+							<Card.Image src={item.image} alt={item.title} />
 
-							<div className="p-2">
-								<h2 className="font-bold">{item.title}</h2>
-								<p className="text-sm">{item.desc}</p>
-							</div>
-						</div>
+							<Card.Body title={item.title} desc={item.desc} />
+						</Card>
 					))}
-				</div>
+				</Card.Container>
 			</section>
 
 			{selectedItem && (

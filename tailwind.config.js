@@ -14,6 +14,9 @@ export default {
 				excalibur: ["ExcaliburNouveau", "sans-serif"],
 				evil: ["EvilEmpire", "sans-serif"],
 			},
+			transitionProperty: {
+				width: "width",
+			},
 		},
 	},
 	plugins: [require("tailwind-scrollbar")],

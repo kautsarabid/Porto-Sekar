@@ -1,34 +1,22 @@
 import { motion } from "framer-motion";
-const variants = {
-	open: {
-		y: 0,
-		opacity: 1,
-		transition: {
-			y: { stiffness: 1000, velocity: 100 },
-		},
-	},
-	closed: {
-		y: 50,
-		opacity: 0,
-		transition: {
-			y: { stiffness: 1000 },
-		},
-	},
-};
 
 const NavigationBar = ({ items }) => {
-	return items.map((item, index) => (
-		<motion.a
-			variants={variants}
-			whileHover={{ scale: 1.1, translateX: 20 }}
-			whileTap={{ scale: 0.95 }}
-			className="block px-4 py-4 text-white hover:text-gray-300 font-base"
-			key={index}
-			href={item.url}
-		>
-			{item.label}
-		</motion.a>
-	));
+	return (
+		<>
+			<div className="flex lg:flex-row flex-col text-center">
+				{items.map((item, index) => (
+					<a
+						className={`relative block px-4 py-4 text-primary hover:text-tertiary lg:text-tertiary lg:hover:text-secondary font-base nav-list group`}
+						key={index}
+						href={item.url}
+					>
+						{item.label}
+						<div className="w-0 h-0.5 mt-0.5 rounded-full bg-tertiary group-hover:w-full transition-width duration-300"></div>
+					</a>
+				))}
+			</div>
+		</>
+	);
 };
 
 export default NavigationBar;

@@ -7,23 +7,29 @@ html {
 	@apply overflow-x-hidden;
 }
 body {
-	@apply font-primary;
+	@apply font-primary bg-tertiary;
 }
-
-/* .title::after {
-	content: "MAGHFIRAH SEKAR HILMA";
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	-webkit-text-fill-color: none;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: #f4d8c2;
-	letter-spacing: 0.1em;
-} */
 
 .stroke-text {
 	-webkit-text-fill-color: none;
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: #003b33;
+}
+
+.stroke-text-odd {
+	-webkit-text-fill-color: none;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #cd9564;
+}
+
+.card-shadow {
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.card-shadow-inset {
+	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+		rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.transition-width {
+	transition-property: width;
 }

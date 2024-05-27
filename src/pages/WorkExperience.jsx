@@ -6,6 +6,7 @@ import Kanisa from "../assets/work-experience/kanisa.jpg";
 import Karyanata from "../assets/work-experience/karyanata.jpg";
 import Kkp from "../assets/kkp.jpg";
 import Modal from "../components/Modal";
+import Card from "../components/Card";
 
 export default function WorkExperience({ names }) {
 	const [showModal, setShowModal] = useState(false);
@@ -57,31 +58,26 @@ export default function WorkExperience({ names }) {
 	];
 	return (
 		<>
-			<section>
-				<Title names={names} title={"Project"} />
+			<section id="we">
+				<Title
+					names={names}
+					title={"Work Experience"}
+					classCSS={"stroke-text"}
+				/>
 
-				<div className="grid grid-cols-2 gap-2 p-4">
+				<Card.Container>
 					{items.map((item, index) => (
-						<div
-							className="flex flex-col items-start  border h-full w-full rounded-md overflow-hidden cursor-pointer"
-							key={index}
+						<Card
+							items={items}
 							onClick={() => handleItemClick(item)}
+							key={index}
 						>
-							<div className="w-full overflow-hidden border h-[150px]">
-								<img
-									src={item.image}
-									alt={`foto ${item.title}`}
-									className="object-cover object-center w-full h-full "
-								/>
-							</div>
+							<Card.Image src={item.image} alt={item.title} />
 
-							<div className="p-2">
-								<h2 className="font-bold capitalize">{item.title}</h2>
-								<p className="text-sm">{item.desc}</p>
-							</div>
-						</div>
+							<Card.Body title={item.title} desc={item.desc} />
+						</Card>
 					))}
-				</div>
+				</Card.Container>
 			</section>
 
 			{selectedItem && (
