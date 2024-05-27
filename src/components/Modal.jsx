@@ -3,11 +3,23 @@ import { IoCloseCircle } from "react-icons/io5";
 export default function Modal({ show, onClose, title, fulldesc, image }) {
 	if (!show) return null;
 
+	const handleOutsideClick = (e) => {
+		if (e.target === e.currentTarget) {
+			onClose();
+		}
+	};
+
 	return (
 		<>
-			<div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 ">
-				<div className="bg-white rounded-lg w-[85%]  p-4 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-100 md:h-[85%] md:w-[65%]">
-					<div className="flex justify-between items-center border-b pb-2 mb-4">
+			<div
+				className="fixed inset-0  flex items-center justify-center bg-black bg-opacity-50 z-50 "
+				onClick={handleOutsideClick}
+			>
+				<div
+					className="bg-white rounded-lg w-[85%] h-[95%] p-4 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-100 md:h-[85%] md:w-[65%]"
+					onClick={(e) => e.stopPropagation()}
+				>
+					<div className="flex justify-between items-center border-b pb-2 mb-4 relative">
 						<h2 className="text-xl font-bold capitalize">{title}</h2>
 						<button
 							onClick={onClose}
