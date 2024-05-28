@@ -10,7 +10,7 @@ import WorkExperience from "./pages/WorkExperience";
 import About from "./pages/About";
 import Home from "./pages/Hero";
 export default function App() {
-	const names = Array.from({ length: 6 }, (_, index) => index + 1);
+	const names = Array.from({ length: 9 }, (_, index) => index + 1);
 	return (
 		<>
 			<header>

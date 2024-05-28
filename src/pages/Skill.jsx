@@ -49,6 +49,7 @@ export default function Skill({ names }) {
 			title: "Microsoft Powerpoint",
 		},
 	];
+
 	return (
 		<>
 			<section className="bg-primary" id="skill">
@@ -63,6 +64,7 @@ export default function Skill({ names }) {
 							items={items}
 							onClick={() => handleItemClick(item)}
 							key={index}
+							index={index}
 						>
 							<Card.ImageSkill
 								src={item.image}

@@ -44,6 +44,7 @@ export default function Project({ names }) {
 							items={items}
 							onClick={() => handleItemClick(item)}
 							key={index}
+							index={index}
 						>
 							<Card.Image src={item.image} alt={item.title} />
 

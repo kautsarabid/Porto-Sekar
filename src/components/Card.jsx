@@ -1,14 +1,34 @@
-export default function Card(props) {
-	const { children, onClick } = props;
+import { delay, motion } from "framer-motion";
 
+export default function Card(props) {
+	const { children, onClick, index } = props;
+	const cardVariant = {
+		offscreen: {
+			y: 100,
+			opacity: 0,
+		},
+		onscreen: (index) => ({
+			y: 0,
+			opacity: 1,
+			transition: {
+				duration: 0.8,
+				delay: index * 0.2,
+			},
+		}),
+	};
 	return (
 		<>
-			<div
+			<motion.div
+				initial="offscreen"
+				whileInView="onscreen"
+				custom={index}
+				variants={cardVariant}
+				viewport={{ once: true }}
 				className="flex flex-col items-start h-full w-full rounded-md overflow-hidden card-shadow cursor-pointer hover:card-shadow-inset bg-white"
 				onClick={onClick}
 			>
 				{children}
-			</div>
+			</motion.div>
 		</>
 	);
 }

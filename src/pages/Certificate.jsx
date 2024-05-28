@@ -40,6 +40,7 @@ export default function Certificate({ names }) {
 							items={items}
 							onClick={() => handleItemClick(item)}
 							key={index}
+							index={index}
 						>
 							<Card.Image src={item.image} alt={item.title} />
 

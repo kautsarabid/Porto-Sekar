@@ -6,11 +6,11 @@ export default function About({ names }) {
 	const imageVariants = {
 		offscreen: {
 			opacity: 0,
-			x: 100,
+			y: -100,
 		},
 		onscreen: {
 			opacity: 1,
-			x: 0,
+			y: 0,
 			transition: {
 				type: "spring",
 				duration: 0.8,
@@ -59,7 +59,7 @@ export default function About({ names }) {
 						<motion.img
 							initial="offscreen"
 							whileInView="onscreen"
-							viewport={{ margin: "-250px" }}
+							viewport={{ margin: "-150px" }}
 							variants={imageVariants}
 							src={Image}
 							alt="poto sekar"
