@@ -3,11 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-	@apply overflow-x-hidden;
-}
 body {
-	@apply font-primary bg-tertiary;
+	@apply font-primary bg-tertiary overflow-x-hidden;
 }
 
 .stroke-text {
@@ -20,6 +17,12 @@ body {
 	-webkit-text-fill-color: none;
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: #cd9564;
+}
+
+.stroke-text-hero {
+	-webkit-text-fill-color: none;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #fafafa;
 }
 
 .card-shadow {
