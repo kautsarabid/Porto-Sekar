@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	@apply scroll-smooth;
+}
+
 body {
 	@apply font-primary bg-tertiary overflow-x-hidden;
 }
