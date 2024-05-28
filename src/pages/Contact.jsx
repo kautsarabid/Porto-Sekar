@@ -10,9 +10,11 @@ const items = [
 	},
 	{
 		image: <RiLinkedinBoxFill />,
+		url: "https://www.linkedin.com/in/maghfirah-hilmawita?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 	},
 	{
 		image: <MdEmail />,
+		url: "mailto:sekar.hilma20@gmail.com",
 	},
 ];
 export default function Contact({ names }) {
@@ -26,6 +28,7 @@ export default function Contact({ names }) {
 							key={index}
 							target="_blank"
 							href={item.url}
+							rel="noopener noreferrer"
 							className="text-6xl text-tertiary hover:text-secondary transition duration-500"
 						>
 							{item.image}
