@@ -41,7 +41,7 @@ export default function NavListMobile({ items, isOpen, onClick }) {
 		>
 			<div className="max-w-7xl flex items-center justify-between ">
 				<h1 className="font-display font-extrabold text-3xl text-tertiary">
-					MSH
+					<a href="#">MSH</a>
 				</h1>
 
 				<NavHamburgerButton onClick={onClick} isOpen={isOpen} />
