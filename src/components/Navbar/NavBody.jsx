@@ -21,10 +21,11 @@ export default function NavBody() {
 	}, []);
 
 	const listNavItems = [
-		{ label: "About", url: "#" },
-		{ label: "Skill", url: "#service" },
-		{ label: "Project", url: "#facility" },
-		{ label: "Certificate", url: "#pricelist" },
+		{ label: "About", url: "#about" },
+		{ label: "Skill", url: "#skill" },
+		{ label: "Work Experience", url: "#we" },
+		{ label: "Project", url: "#project" },
+		{ label: "Certificate", url: "#certificate" },
 		{ label: "Contact", url: "#contact" },
 	];
 
