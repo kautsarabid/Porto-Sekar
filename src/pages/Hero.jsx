@@ -13,7 +13,7 @@ export default function Home() {
 								transition={{ duration: 0.5 }}
 								className="xl:absolute xl:top-24 xl:left-10 xl:text-[7rem]"
 							>
-								Maghfirah
+								Maghfira
 							</motion.span>
 							<motion.span
 								initial={{ x: 1000 }}
@@ -43,10 +43,10 @@ export default function Home() {
 							<motion.span
 								initial={{ x: 1000 }}
 								animate={{ x: 0 }}
-								transition={{ duration: 1.5 }}
+								transition={{ delay: 1.5, duration: 0.5 }}
 								className="xl:absolute xl:top-24 xl:right-[1rem] xl:text-[7rem]"
 							>
-								Maghfirah
+								Maghfira
 							</motion.span>
 							<motion.span
 								initial={{ x: -1000 }}
