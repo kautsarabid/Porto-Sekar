@@ -26,34 +26,30 @@ export default function WorkExperience({ names }) {
 		{
 			image: Trilogi,
 			title: "Data Entry at Trilogi.Id",
-			desc: "Memiliki pengalaman dalam berbagai jenis proyek FnB data entry",
-			fulldesc: `Saya adalah seorang data entry yang berpengalaman dengan keahlian dalam memasukkan data dengan cepat dan akurat. Saya memiliki pengalaman dalam berbagai jenis proyek FnB data entry, termasuk:
-      <ul className="text-indent">
-        <li>Memasukkan data pelanggan</li>
-        <li>Memproses pesanan</li>
-        <li>Mengekstrak data dari dokumen maupun website</li>
-      </ul> Saya mahir menggunakan berbagai perangkat lunak data entry, termasuk Microsoft Excel, Google Sheets, dan Majoo. Saya adalah pekerja yang teliti dan berorientasi pada detail, dengan kemampuan untuk bekerja secara mandiri dan sebagai bagian dari tim. Saya berkomitmen untuk memberikan hasil berkualitas tinggi tepat waktu.`,
+			desc: "Experienced in accurate and efficient data management and processing.",
+			fulldesc: `Experienced in accurate and efficient data management and processing. With expertise in the use of various data processing software such as Microsoft Excel, Google Sheets and Majoo. Ability to enter and verify data quickly and thoroughly.
+			High attention to detail and ability to work to tight deadlines. Several successful projects have improved data entry efficiency and ensured data integrity is maintained. Dedicated to supporting organizations in effective and reliable data management..`,
 		},
 		{
 			image: Kkp,
 			title: "Intern at Puslabfor POLDA Sumut",
-			desc: "Mempelajari teknik-teknik forensik",
+			desc: "Have a strong interest in criminal investigation and forensic analysis.",
 			fulldesc:
-				"Mempelajari teknik-teknik forensik: saya mempelajari beberapa teknik forensik seperti analisis sidik jari, pemeriksaan DNA, pemeriksaan toksikologi, bercak darah dan sperma.Berkontribusi dalam penyelidikan kriminal: saya berperan dalam membantu menyelesaikan kasus kriminal, seperti membantu mengidentifikasi pelaku sesuai dengan bukti yang diserahkan secara ilmiah.Mengembangkan kemampuan problem-solving dan analisis: selama melakukan kegiatan magang di pusat laboratorium forensik membantu saya mengasah kemampuan memecahkan masalah dan menganalisis informasi secara kritis.Meningkatkan keterampilan komunikasi dan teamwork: saya mendapatkan pengalaman dalam bekerja sama dengan tim forensik dan berkomunikasi dengan penegak hukum.Menemukan passion di bidang forensik: saya memiliki ketertarikan di bidang forensik dan keinginan untuk belajar lebih mengenai ilmu forensik.",
+				"Have a strong interest in criminal investigation and forensic analysis. Possess a deep understanding of forensic investigative techniques, evidence analysis procedures, and the use of current technology in data collection and interpretation. Experience in research and laboratory practicum has expanded my knowledge of forensic laboratory operations, including the use of equipment and analysis methodologies such as the RapidHIT 200 Instrument for DNA examination. My academic projects range from processing evidence from crime scenes to forensic identification, which provides deep insight into the complexities and challenges within this field. I am committed to carrying out every task with high integrity, meticulous rigor, and relentless dedication. My goal is to utilize my knowledge and skills to support Polda's mission in maintaining security and justice for the community.",
 		},
 		{
 			image: Karyanata,
 			title: "cashier and admin at Caryanata Cake and Dessert",
-			desc: "Mengelola dan memperbarui inventaris toko, termasuk memesan produk baru, menerima pengiriman, dan melacak penjualan.",
+			desc: "With experience as a cashier and admin in the F&B industry, I have been trained in handling financial transactions and daily administration",
 			fulldesc:
-				"Mampu menangani transaksi penjualan dengan cepat dan akurat, termasuk menerima pembayaran, memberikan kembalian, dan memproses kartu kredit. Memiliki pengetahuan yang baik tentang produk toko dan dapat memberikan rekomendasi kepada pelanggan. Mampu bekerja secara mandiri dan sebagai bagian dari tim.Memiliki kemampuan komunikasi yang baik dan dapat membangun hubungan yang positif dengan pelanggan.",
+				"With experience as a cashier and admin in the F&B industry, I have been trained in handling financial transactions and daily administration. I have expertise in serving customers in a friendly and efficient manner, as well as maintaining accurate financial records.I am familiar with cashier software such as Majoo and social media applications (Instagram, Tiktok, and Whatsapp) and able to adapt quickly to changes in the work environment. I am committed to providing the best service to customers and supporting the smooth operation of the restaurant or cafe.",
 		},
 		{
 			image: Kanisa,
 			title: "staff sales and marketing at Laluna.co",
-			desc: "mengatur tata letak toko yang menarik dan efisien, serta memajang produk dengan cara yang menarik perhatian pelanggan.",
+			desc: "A Sales and Marketing Event professional with experience designing and executing successful events.",
 			fulldesc:
-				"Saya memiliki pengalaman dalam menyiapkan dan menata toko aksesoris di berbagai event, termasuk festival, dan pameran. Saya mampu mengatur tata letak toko yang menarik dan efisien, serta memajang produk dengan cara yang menarik perhatian pelanggan. Saya senang membantu pelanggan dalam memilih dan membeli aksesoris. Saya memiliki pengetahuan yang luas tentang produk yang tersedia dan dapat memberikan saran yang sesuai dengan kebutuhan dan anggaran pelanggan.Saya adalah pemain tim yang handal dan mampu bekerja sama dengan baik dengan staf lain untuk memastikan kelancaran event. Saya berkomunikasi dengan jelas, membantu menyelesaikan tugas, dan menciptakan suasana yang positif. Saya memiliki kemampuan untuk bekerja secara mandiri dan sebagai bagian dari tim. Saya mampu belajar dengan cepat dan beradaptasi dengan situasi baru.",
+				"A Sales and Marketing Event professional with experience designing and executing successful events. Expertise includes creative marketing strategies and strong customer relationship management. With a background in event management and digital marketing, has helped various brands increase their visibility and sales through memorable events. Portfolio includes product launches, trade shows, and festivals that attract thousands of attendees. Commitment to creating memorable events that make a real impact on your business. Let's work together to create amazing events and increase sales.",
 		},
 	];
 	return (

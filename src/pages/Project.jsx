@@ -28,13 +28,6 @@ export default function Project({ names }) {
 			desc: "Membuat Poster Pencarian Pasien Koas Kedokteran Gigi",
 		},
 		{
-			image: Kkp,
-			title: "Intern di Puslabfor POLDA Sumut",
-			desc: "Mempelajari teknik-teknik forensik",
-			fulldesc:
-				"Mempelajari teknik-teknik forensik: saya mempelajari beberapa teknik forensik seperti analisis sidik jari, pemeriksaan DNA, pemeriksaan toksikologi, bercak darah dan sperma.Berkontribusi dalam penyelidikan kriminal: saya berperan dalam membantu menyelesaikan kasus kriminal, seperti membantu mengidentifikasi pelaku sesuai dengan bukti yang diserahkan secara ilmiah.Mengembangkan kemampuan problem-solving dan analisis: selama melakukan kegiatan magang di pusat laboratorium forensik membantu saya mengasah kemampuan memecahkan masalah dan menganalisis informasi secara kritis.Meningkatkan keterampilan komunikasi dan teamwork: saya mendapatkan pengalaman dalam bekerja sama dengan tim forensik dan berkomunikasi dengan penegak hukum.Menemukan passion di bidang forensik: saya memiliki ketertarikan di bidang forensik dan keinginan untuk belajar lebih mengenai ilmu forensik.",
-		},
-		{
 			image: Image1,
 			title: "Project 3",
 			desc: "lorem",
