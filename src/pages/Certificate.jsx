@@ -22,11 +22,11 @@ export default function Certificate({ names }) {
 	const items = [
 		{
 			image: Image1,
-			title: "Sertifikat 1",
+			title: "Forensic Seminar Certificate",
 		},
 		{
 			image: Image2,
-			title: "Sertifikat Himpunan Biologi",
+			title: "Biology Association Certificate",
 		},
 	];
 	return (
