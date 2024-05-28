@@ -24,7 +24,7 @@ export default function Card(props) {
 				custom={index}
 				variants={cardVariant}
 				viewport={{ once: true }}
-				className="flex flex-col items-start h-full w-full rounded-md overflow-hidden card-shadow cursor-pointer hover:card-shadow-inset bg-white"
+				className="flex flex-col items-start h-full w-full rounded-md overflow- card-shadow cursor-pointer hover:card-shadow-inset bg-white"
 				onClick={onClick}
 			>
 				{children}
@@ -67,12 +67,20 @@ const ImageSkill = (props) => {
 };
 
 const Body = (props) => {
-	const { title, desc } = props;
+	const { title, desc, children } = props;
 	return (
 		<div className="p-2">
 			<h2 className="font-bold capitalize">{title}</h2>
 			<p className="text-sm">{desc}</p>
+			{children}
 		</div>
+	);
+};
+
+const Date = (props) => {
+	const { date } = props;
+	return (
+		<span className="text-sm text-slate-400 mt-3 text-end block">{date}</span>
 	);
 };
 
@@ -80,3 +88,4 @@ Card.Container = Container;
 Card.Image = Image;
 Card.ImageSkill = ImageSkill;
 Card.Body = Body;
+Card.Date = Date;
