@@ -24,7 +24,7 @@ export default function Card(props) {
 				custom={index}
 				variants={cardVariant}
 				viewport={{ once: true }}
-				className="flex flex-col items-start h-full w-full rounded-md overflow- card-shadow cursor-pointer hover:card-shadow-inset bg-white"
+				className="flex flex-col items-start h-full w-full rounded-md overflow-hidden card-shadow cursor-pointer hover:card-shadow-inset bg-white"
 				onClick={onClick}
 			>
 				{children}
