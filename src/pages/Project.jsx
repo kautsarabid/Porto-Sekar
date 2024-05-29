@@ -27,11 +27,6 @@ export default function Project({ names }) {
 			title: "Design Poster",
 			desc: "Membuat Poster Pencarian Pasien Koas Kedokteran Gigi",
 		},
-		{
-			image: Image1,
-			title: "Project 3",
-			desc: "lorem",
-		},
 	];
 	return (
 		<>
