@@ -1,8 +1,20 @@
-# React + Vite
+# Portofolio Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website portofolio yang dirancang untuk klien, seorang profesional yang ingin menampilkan karya dan pencapaiannya dengan cara yang elegan dan menarik. Website ini dibangun dengan tujuan utama untuk mencerminkan identitas dan keahlian klien, memberikan pengunjung pengalaman yang intuitif dan menyenangkan, serta memudahkan akses ke informasi penting.
 
-Currently, two official plugins are available:
+## Fitur
+- About Section
+- Skill Section
+- Project Section
+- Work Experience Section
+- Certificate Section
+- Contact Section
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Teknologi Yang digunakan
+- React JS
+- Node JS
+- TailwindCSS
+- Framer Motion
+
+## Link Website
+[(https://porto-sekar.vercel.app/)]
