@@ -17,4 +17,4 @@ Website portofolio yang dirancang untuk klien, seorang profesional yang ingin me
 - Framer Motion
 
 ## Link Website
-[(https://porto-sekar.vercel.app/)]
+[Portofolio Sekar Hilma](https://porto-sekar.vercel.app/)
